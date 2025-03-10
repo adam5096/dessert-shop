@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>cart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../styles/all-output/cart-output.css">
     <style>
       a {
@@ -54,12 +55,15 @@
           <nav>
             <ul
               class="hidden items-center flex-1  mobile:flex mobile:justify-center mobile:flex-initial gap-3.5 mobile:my-0 sm:gap-8 md:gap-10 lg:gap-20">
-              <li class="topNavLinksFontAndColor"><a class="break-keep w-auto font-bold text-base text-homePrimaryColor sm:flex" href="../index.html"
+              <li class="topNavLinksFontAndColor"><a
+                  class="break-keep w-auto font-bold text-base text-homePrimaryColor sm:flex" href="../index.html"
                   target="_self" class="text-lg">首頁</a></li>
-              <li class="topNavLinksFontAndColor"><a class="break-keep w-auto font-bold text-base text-homePrimaryColor sm:flex" href="./products.html"
+              <li class="topNavLinksFontAndColor"><a
+                  class="break-keep w-auto font-bold text-base text-homePrimaryColor sm:flex" href="./products.html"
                   target="_self">甜點</a>
               </li>
-              <li class="topNavLinksFontAndColor"><a class="break-keep w-auto font-bold text-base text-homePrimaryColor sm:flex" href="./login.html"
+              <li class="topNavLinksFontAndColor"><a
+                  class="break-keep w-auto font-bold text-base text-homePrimaryColor sm:flex" href="./login.html"
                   target="_self">登入</a>
               </li>
             </ul>
@@ -69,7 +73,8 @@
           <!-- cart -->
           <div class="w-6 h-6 flex justify-center items-center flex-1 mobile:flex-initial">
             <a class="w-auto font-bold text-base text-top-nav-bar" href="#" target="_self"><img
-                class="flex w-full h-full" src="../assets/img/index-home/shopping_cart.png" alt="cart" loading="lazy"></a>
+                class="flex w-full h-full" src="../assets/img/index-home/shopping_cart.png" alt="cart"
+                loading="lazy"></a>
           </div>
           <!-- cart END -->
         </div>
@@ -81,139 +86,156 @@
     <main>
       <section class="max-lg:mb-0 mb-16">
         <div class="max-lg:block flex gap-4 justify-center items-center">
+          <!-- left -->
+          <div class="max-lg:pl-0 pl-4">
+            <div class="flex justify-center items-center py-4 bg-home-secondary-color">
+              <h2 class="text-2xl/[20px] font-pinfangBold text-home-primary-color">您的購物車</h2>
+            </div>
+            <div class="max-lg:pt-[33px] dessert-container pt-[30px] space-y-4">
+              <div id="card"
+                class="max-lg:col-start-1 max-lg:col-end-3 max-lg:grid-rows-3 max-lg:grid-cols-4  relative grid grid-cols-12 gap-x-7 col-start-1 col-end-4">
+                <div
+                  class="max-lg:row-start-1 max-lg:row-end-3  max-lg:col-start-1 max-lg:col-end-3 imageTrimmingSquare imagetrimmimg col-start-1 col-end-3 row-start-1 row-end-2 ">
+                  <img src="https://bit.ly/2QvsT63" alt="snack" loading="lazy">
+                </div>
 
-            <!-- left -->
-            <div class="max-lg:pl-0 pl-4">
-              <!-- 您的購物車文字 -->
-              <div class="flex justify-center items-center py-4 bg-home-secondary-color">
-                <h2 class="text-2xl/[20px] font-pinfangBold text-home-primary-color">您的購物車</h2>
+
+                <div
+                  class="max-lg:justify-self-end max-lg:self-center max-lg:row-start-1 max-lg:row-end-2 max-lg:col-end-5 col-start-3 col-end-6 row-start-1 row-end-2  flex flex-col gap-y-[3px] justify-center items-start">
+                  <div class="break-keep text-xl/[20px] text-home-primary-color font-pinfangLight">焦糖馬卡龍</div>
+                  <div class="break-keep text-base/[20px] text-home-primary-color font-pinfang">NT$450</div>
+                </div>
+
+
+                <div
+                  class="max-lg:justify-self-end max-lg:row-start-2 max-lg:row-end-3  max-lg:col-start-3  max-lg:col-end-5 col-start-6 col-end-10 row-start-1 row-end-2  flex justify-normal items-center">
+                  <button class="cart-btn">-</button>
+                  <span class="cart-btn">2</span>
+                  <button class="cart-btn">+</button>
+                </div>
+
+
+                <div
+                  class=" cart-divide-line max-lg:text-end max-lg:w-[88vw] max-lg:justify-self-end  max-lg:row-start-3 max-lg:row-end-4 max-lg:col-start-3 max-lg:col-end-5 relative  col-start-10  col-end-12 justify-self-center self-center">
+                  <p class="text-xl/[20px] text-home-primary-color font-pinfangSemiBold">
+                    NT$900</p>
+                </div>
+
+                <button
+                  class="max-lg:hidden row-start-1 row-end-2  col-start-12 col-end-13 justify-self-center self-center flex w-6 h-6">
+                  <img src="../assets/img/cart/delete_outline_24dp_3F5D45.png" alt="cancel icon" loading="lazy">
+                </button>
               </div>
 
-              <div class="max-lg:pt-[33px] dessert-container pt-[30px] space-y-4">
-                <!-- 卡片 1 -->
-                <div id="card"
-                  class="max-lg:col-start-1 max-lg:col-end-3 max-lg:grid-rows-3 max-lg:grid-cols-4  relative grid grid-cols-12 gap-x-7 col-start-1 col-end-4">
-                  <!-- 1. 點心圖 -->
-                  <div
-                    class="max-lg:row-start-1 max-lg:row-end-3  max-lg:col-start-1 max-lg:col-end-3 imageTrimmingSquare imagetrimmimg col-start-1 col-end-3 row-start-1 row-end-2 ">
-                    <img src="https://bit.ly/2QvsT63" alt="snack" loading="lazy">
-                  </div>
-
-
-                  <!-- 2. 品項&售價 -->
-                  <div
-                    class="max-lg:justify-self-end max-lg:self-center max-lg:row-start-1 max-lg:row-end-2 max-lg:col-end-5 col-start-3 col-end-6 row-start-1 row-end-2  flex flex-col gap-y-[3px] justify-center items-start">
-                    <div class="break-keep text-xl/[20px] text-home-primary-color font-pinfangLight">焦糖馬卡龍</div>
-                    <div class="break-keep text-base/[20px] text-home-primary-color font-pinfang">NT$450</div>
-                  </div>
-
-
-                  <!-- 3. 計數器 -->
-                  <div
-                    class="max-lg:justify-self-end max-lg:row-start-2 max-lg:row-end-3  max-lg:col-start-3  max-lg:col-end-5 col-start-6 col-end-10 row-start-1 row-end-2  flex justify-normal items-center">
-                    <button class="cart-btn">-</button>
-                    <span class="cart-btn">2</span>
-                    <button class="cart-btn">+</button>
-                  </div>
-
-
-                  <!-- 4. 總金額 -->
-                  <div
-                    class=" cart-divide-line max-lg:text-end max-lg:w-[88vw] max-lg:justify-self-end  max-lg:row-start-3 max-lg:row-end-4 max-lg:col-start-3 max-lg:col-end-5 relative  col-start-10  col-end-12 justify-self-center self-center">
-                    <p class="text-xl/[20px] text-home-primary-color font-pinfangSemiBold">
-                      NT$900</p>
-                  </div>
-
-                  <!-- 5. 刪除按鈕 -->
-                  <button
-                    class="max-lg:hidden row-start-1 row-end-2  col-start-12 col-end-13 justify-self-center self-center flex w-6 h-6">
-                    <img src="../assets/img/cart/delete_outline_24dp_3F5D45.png" alt="cancel icon" loading="lazy">
-                  </button>
+              <div id="card"
+                class="max-lg:col-start-1 max-lg:col-end-3 max-lg:grid-rows-3 max-lg:grid-cols-4  relative grid grid-cols-12 gap-x-7 col-start-1 col-end-4">
+                <div
+                  class="max-lg:row-start-1 max-lg:row-end-3  max-lg:col-start-1 max-lg:col-end-3 imageTrimmingSquare imagetrimmimg col-start-1 col-end-3 row-start-1 row-end-2 ">
+                  <img src="https://bit.ly/2zBDAxX" alt="snack" loading="lazy">
                 </div>
-                <!-- 卡片 2 -->
-                <div id="card"
-                  class="max-lg:col-start-1 max-lg:col-end-3 max-lg:grid-rows-3 max-lg:grid-cols-4  relative grid grid-cols-12 gap-x-7 col-start-1 col-end-4">
-                  <!-- 1. 點心圖 -->
-                  <div
-                    class="max-lg:row-start-1 max-lg:row-end-3  max-lg:col-start-1 max-lg:col-end-3 imageTrimmingSquare imagetrimmimg col-start-1 col-end-3 row-start-1 row-end-2 ">
-                    <img src="https://bit.ly/2zBDAxX" alt="snack" loading="lazy">
-                  </div>
 
 
-                  <!-- 2. 品項&售價 -->
-                  <div
-                    class="max-lg:justify-self-end max-lg:self-center max-lg:row-start-1 max-lg:row-end-2 max-lg:col-end-5 col-start-3 col-end-6 row-start-1 row-end-2  flex flex-col gap-y-[3px] justify-center items-start">
-                    <div class="break-keep text-xl/[20px] text-home-primary-color font-pinfangLight">焦糖馬卡龍</div>
-                    <div class="break-keep text-base/[20px] text-home-primary-color font-pinfang">NT$450</div>
-                  </div>
-
-
-                  <!-- 3. 計數器 -->
-                  <div
-                    class="max-lg:justify-self-end max-lg:row-start-2 max-lg:row-end-3  max-lg:col-start-3  max-lg:col-end-5 col-start-6 col-end-10 row-start-1 row-end-2  flex justify-normal items-center">
-                    <button class="cart-btn">-</button>
-                    <span class="cart-btn">2</span>
-                    <button class="cart-btn">+</button>
-                  </div>
-
-
-                  <!-- 4. 總金額 -->
-                  <div
-                    class="cart-divide-line  max-lg:text-end max-lg:w-[90vw] max-lg:justify-self-end  max-lg:row-start-3 max-lg:row-end-4 max-lg:col-start-3 max-lg:col-end-5 relative  col-start-10  col-end-12 justify-self-center self-center">
-                    <p class="text-xl/[20px] text-home-primary-color font-pinfangSemiBold">
-                      NT$900</p>
-                  </div>
-
-                  <!-- 5. 刪除按鈕 -->
-                  <button
-                    class="max-lg:hidden row-start-1 row-end-2  col-start-12 col-end-13 justify-self-center self-center flex w-6 h-6">
-                    <img src="../assets/img/cart/delete_outline_24dp_3F5D45.png" alt="cancel icon" loading="lazy">
-                  </button>
+                <div
+                  class="max-lg:justify-self-end max-lg:self-center max-lg:row-start-1 max-lg:row-end-2 max-lg:col-end-5 col-start-3 col-end-6 row-start-1 row-end-2  flex flex-col gap-y-[3px] justify-center items-start">
+                  <div class="break-keep text-xl/[20px] text-home-primary-color font-pinfangLight">焦糖馬卡龍</div>
+                  <div class="break-keep text-base/[20px] text-home-primary-color font-pinfang">NT$450</div>
                 </div>
-                <!-- 卡片 3 -->
-                <div id="card"
-                  class="max-lg:col-start-1 max-lg:col-end-3 max-lg:grid-rows-3 max-lg:grid-cols-4  relative grid grid-cols-12 gap-x-7 col-start-1 col-end-4">
-                  <!-- 1. 點心圖 -->
-                  <div
-                    class="max-lg:row-start-1 max-lg:row-end-3  max-lg:col-start-1 max-lg:col-end-3 imageTrimmingSquare imagetrimmimg col-start-1 col-end-3 row-start-1 row-end-2 ">
-                    <img src="https://bit.ly/2zKOP7w" alt="snack" loading="lazy">
-                  </div>
 
 
-                  <!-- 2. 品項&售價 -->
-                  <div
-                    class="max-lg:justify-self-end max-lg:self-center max-lg:row-start-1 max-lg:row-end-2 max-lg:col-end-5 col-start-3 col-end-6 row-start-1 row-end-2  flex flex-col gap-y-[3px] justify-center items-start">
-                    <div class="break-keep text-xl/[20px] text-home-primary-color font-pinfangLight">焦糖馬卡龍</div>
-                    <div class="break-keep text-base/[20px] text-home-primary-color font-pinfang">NT$450</div>
-                  </div>
-
-
-                  <!-- 3. 計數器 -->
-                  <div
-                    class="max-lg:justify-self-end max-lg:row-start-2 max-lg:row-end-3  max-lg:col-start-3  max-lg:col-end-5 col-start-6 col-end-10 row-start-1 row-end-2  flex justify-normal items-center">
-                    <button class="cart-btn">-</button>
-                    <span class="cart-btn">2</span>
-                    <button class="cart-btn">+</button>
-                  </div>
-
-
-                  <!-- 4. 總金額 -->
-                  <div
-                    class="cart-divide-line  max-lg:text-end max-lg:w-[90vw] max-lg:justify-self-end  max-lg:row-start-3 max-lg:row-end-4 max-lg:col-start-3 max-lg:col-end-5 relative  col-start-10  col-end-12 justify-self-center self-center">
-                    <p class="text-xl/[20px] text-home-primary-color font-pinfangSemiBold">
-                      NT$900</p>
-                  </div>
-
-                  <!-- 5. 刪除按鈕 -->
-                  <button
-                    class="max-lg:hidden row-start-1 row-end-2  col-start-12 col-end-13 justify-self-center self-center flex w-6 h-6">
-                    <img src="../assets/img/cart/delete_outline_24dp_3F5D45.png" alt="cancel icon" loading="lazy">
-                  </button>
+                <div
+                  class="max-lg:justify-self-end max-lg:row-start-2 max-lg:row-end-3  max-lg:col-start-3  max-lg:col-end-5 col-start-6 col-end-10 row-start-1 row-end-2  flex justify-normal items-center">
+                  <button class="cart-btn">-</button>
+                  <span class="cart-btn">2</span>
+                  <button class="cart-btn">+</button>
                 </div>
-                
 
+
+                <div
+                  class="cart-divide-line  max-lg:text-end max-lg:w-[90vw] max-lg:justify-self-end  max-lg:row-start-3 max-lg:row-end-4 max-lg:col-start-3 max-lg:col-end-5 relative  col-start-10  col-end-12 justify-self-center self-center">
+                  <p class="text-xl/[20px] text-home-primary-color font-pinfangSemiBold">
+                    NT$900</p>
+                </div>
+
+                <button
+                  class="max-lg:hidden row-start-1 row-end-2  col-start-12 col-end-13 justify-self-center self-center flex w-6 h-6">
+                  <img src="../assets/img/cart/delete_outline_24dp_3F5D45.png" alt="cancel icon" loading="lazy">
+                </button>
+              </div>
+
+              <div id="card"
+                class="max-lg:col-start-1 max-lg:col-end-3 max-lg:grid-rows-3 max-lg:grid-cols-4  relative grid grid-cols-12 gap-x-7 col-start-1 col-end-4">
+                <div
+                  class="max-lg:row-start-1 max-lg:row-end-3  max-lg:col-start-1 max-lg:col-end-3 imageTrimmingSquare imagetrimmimg col-start-1 col-end-3 row-start-1 row-end-2 ">
+                  <img src="https://bit.ly/2zKOP7w" alt="snack" loading="lazy">
+                </div>
+
+
+                <div
+                  class="max-lg:justify-self-end max-lg:self-center max-lg:row-start-1 max-lg:row-end-2 max-lg:col-end-5 col-start-3 col-end-6 row-start-1 row-end-2  flex flex-col gap-y-[3px] justify-center items-start">
+                  <div class="break-keep text-xl/[20px] text-home-primary-color font-pinfangLight">焦糖馬卡龍</div>
+                  <div class="break-keep text-base/[20px] text-home-primary-color font-pinfang">NT$450</div>
+                </div>
+
+
+                <div
+                  class="max-lg:justify-self-end max-lg:row-start-2 max-lg:row-end-3  max-lg:col-start-3  max-lg:col-end-5 col-start-6 col-end-10 row-start-1 row-end-2  flex justify-normal items-center">
+                  <button class="cart-btn">-</button>
+                  <span class="cart-btn">2</span>
+                  <button class="cart-btn">+</button>
+                </div>
+
+
+                <div
+                  class="cart-divide-line  max-lg:text-end max-lg:w-[90vw] max-lg:justify-self-end  max-lg:row-start-3 max-lg:row-end-4 max-lg:col-start-3 max-lg:col-end-5 relative  col-start-10  col-end-12 justify-self-center self-center">
+                  <p class="text-xl/[20px] text-home-primary-color font-pinfangSemiBold">
+                    NT$900</p>
+                </div>
+
+                <button
+                  class="max-lg:hidden row-start-1 row-end-2  col-start-12 col-end-13 justify-self-center self-center flex w-6 h-6">
+                  <img src="../assets/img/cart/delete_outline_24dp_3F5D45.png" alt="cancel icon" loading="lazy">
+                </button>
               </div>
             </div>
+
+            <!-- 又霖範本 -->
+            <!-- <ul>
+                <li>
+                  <div>
+                    <div class="imageTrimmingSquare imagetrimmimg">
+                      <img src="https://bit.ly/2QvsT63" alt="焦糖瑪卡龍" loading="lazy">
+                    </div>
+                  </div>
+                  <div>
+                    <p>焦糖馬卡龍</p>
+                    <p>NT$ 450</p>
+                    <div>
+                      <button>-</button>
+                      <p>0</p>
+                      <button>+</button>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <button>-</button>
+                      <p>0</p>
+                      <button>+</button>
+                    </div>
+                  </div>
+                  <div>
+                    <p>NT$ 900</p>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <span class="material-icons">
+                        delete_outline
+                      </span>
+                    </a>
+                  </div>
+                </li>
+              </ul> -->
+
+          </div>
 
           <!-- right -->
           <div class="self-start max-lg:pr-0 pr-4">
@@ -241,7 +263,8 @@
               </div>
             </div>
             <li class="text-center py-4 bg-home-third-color list-none">
-              <a href="./checkout-1.html" target="_self" class="text-2xl/[20px] text-home-primary-color font-pinfangSemiBold">結帳</a>
+              <a href="./checkout-1.html" target="_self"
+                class="text-2xl/[20px] text-home-primary-color font-pinfangSemiBold">結帳</a>
             </li>
           </div>
         </div>
@@ -255,14 +278,15 @@
           <div class="max-xl:grid-cols-1 grid grid-cols-2 items-center">
             <div class="max-xl:justify-center max-xl:flex-col flex gap-x-5 items-center">
               <div class="flex justify-center items-center">
-                <img class="w-10 h-10 " src="../assets/img/index-home/logo-light@2x.png" alt="logo-light@2x" loading="lazy">
+                <img class="w-10 h-10 " src="../assets/img/index-home/logo-light@2x.png" alt="logo-light@2x"
+                  loading="lazy">
               </div>
               <div class=" flex items-center py-10">
                 <p class="font-helveticaneue text-white text-2xl leading-[33px] break-keep">
                   訂閱你我的甜蜜郵件</p>
               </div>
             </div>
-    
+
             <!-- email 輸入框 -->
             <div class="flex justify-center items-center">
               <label class="relative flex-[1_1_80%]">
@@ -273,15 +297,16 @@
               </label>
               <button type="button"
                 class="flex flex-[1_1_20%] justify-center items-center w-[64px] h-[56px] bg-home-third-color">
-                <img class="h-auto" src="../assets/img/index-home/arrow_forward-24px.png" alt="arrow forward" loading="lazy">
+                <img class="h-auto" src="../assets/img/index-home/arrow_forward-24px.png" alt="arrow forward"
+                  loading="lazy">
               </button>
             </div>
             <!-- email 輸入框 END -->
           </div>
-    
+
         </div>
       </div>
-    
+
       <!-- 店家地址 -->
       <address class="bg-home-secondary-color ">
         <div class="dessert-container">
@@ -300,7 +325,7 @@
               class="hidden mobile:flex justify-items-end -col-start-1">
             <!-- 吃甜點的好日子 END -->
           </div>
-    
+
           <div class="max-sm:gap-y-4 max-sm:grid-cols-1 pb-8  grid grid-cols-2">
             <div class="max-sm:row-start-1 flex gap-4">
               <img src="../assets/img/index-home/ic-line@.png" alt="instagram" loading="lazy">
@@ -314,7 +339,7 @@
               Reserved</p>
           </div>
         </div>
-    
+
       </address>
     </footer>
     <!-- 店家聯絡方式 END -->
