@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/all-output/index-output.css">
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      footer input[type="email"] {
+        background-image: url("./img/index-home/mail-24px.png");
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position: 5% 50%;
+        padding: 0.5rem 0.5rem 0.5rem 4rem;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 頂端導航 -->
+    <header class="max-lg:py-[36px] py-[30px]">
+      <div class="dessert-container flex max-mobile:justify-around justify-between items-center">
+        <!-- 漢堡 -->
+        <h1 class="max-mobile:flex hidden justify-center items-center flex-1">
+          <img src="assets/img/index-home/dehaze-24px.png" alt="hamburger" loading="lazy">
+        </h1>
+        <!-- 漢堡 END -->
+
+        <!-- logo 圖 -->
+        <div class="max-mobile:justify-center flex items-center gap-2 flex-1">
+          <picture>
+            <!-- 大圖 -->
+            <source media="(min-width: 1280px)" srcset="../assets/img/index-home/logo-all-dark.png">
+            <!-- 小圖 -->
+            <img src="assets/img/index-home//logotype-sm-dark@2x.png" alt="logotype" loading="lazy">
+          </picture>
+        </div>
+        <!-- 導航區 -->
+        <div
+          class="max-mobile:flex-1 max-sm:gap-3.5 max-md:gap-8 max-lg:gap-10 flex justify-between items-center flex-initial gap-20">
+          <!-- 導航文字 -->
+          <nav>
+            <ul
+              class="hidden items-center flex-1  mobile:flex mobile:justify-center mobile:flex-initial gap-3.5 mobile:my-0 sm:gap-8 md:gap-10 lg:gap-20">
+              <li class="topNavLinksStyle"><a class="topNavLinksInnerStyle sm:flex" href="#" target="_self"
+                  class="text-lg ">首頁</a></li>
+              <li class="topNavLinksStyle"><a class="topNavLinksInnerStyle sm:flex"
+                  href="./pages/products.html" target="_self">甜點</a>
+              </li>
+              <li class="topNavLinksStyle"><a class="topNavLinksInnerStyle sm:flex"
+                  href="./pages/login.html" target="_self">登入</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- 導航文字 END -->
+
+          <!-- cart -->
+          <div class="w-6 h-6 flex justify-center items-center flex-1 mobile:flex-initial">
+            <a class="w-auto font-bold text-base text-top-nav-bar" href="./pages/cart.html" target="_self"><img
+                class="flex w-full h-full" src="assets/img/index-home/shopping_cart.png" alt="cart"
+                loading="lazing"></a>
+          </div>
+          <!-- cart END -->
+        </div>
+        <!-- 導航區 END -->
+      </div>
+    </header>
+    <!-- 頂端導航 END -->
+
+    <main>
+      <section class="mb-[30px]">
+        <div class="dessert-container">
+          <img src="https://bit.ly/2OhbMHr" alt="ice-cream" loading="lazy">
+          <div
+            class="relative top-0 mobile:-top-20 grid grid-cols-3 gap-[2px] max-w-full mobile:w-[780px] mobile:mx-auto">
+            <div
+              class="hero-blur-effect mobile:aspect-square w-auto h-[180px] mobile:w-full mobile:h-full relative text-homePrimaryColor flex items-center justify-center">
+              <span class="relative z-10 writing-mode-vertical text-2xl font-light">本日精選</span>
+            </div>
+            <div
+              class="hero-blur-effect mobile:aspect-square w-auto h-[180px] mobile:w-full mobile:h-full relative text-white flex items-center justify-center">
+              <span class="relative z-10 writing-mode-vertical text-2xl font-light">人氣推薦</span>
+            </div>
+            <div
+              class="hero-blur-effect mobile:aspect-square w-auto h-[180px] mobile:w-full mobile:h-full relative text-white flex items-center justify-center">
+              <span class="relative z-10 writing-mode-vertical text-2xl font-light">新品上市</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- #region 又霖 為什麼'做'甜點 -->
+      <section class="xl:bg-home-secondary-color relative topBg">
+        <div class="px-0 xl:px-10 dessert-container xl:flex xl:justify-between xl:items-center">
+          <!-- 1. 圖文 -->
+          <h2 class="mb-[30px] xl:mb-0 flex justify-center xl:justify-end xl:flex-[1_1_15%] xl:order-3">
+            <picture>
+              <!-- 大圖 -->
+              <source media="(min-width: 1280px)" srcset="assets/img/index-home/lg-為什麼選擇了做甜點.png">
+              <!-- 小圖 -->
+              <img src="assets/img/index-home/sm-橫式-為什麼選擇了做甜點.png" alt="做甜點" loading="lazy">
+            </picture>
+          </h2>
+
+          <!-- 2. 點心圖 -->
+          <div class=" xl:flex-[1_1_45%] xl:order-1">
+            <div class="imagetrimmimg imageTrimmingSquare">
+              <img src="https://bit.ly/2xPn7Eq" alt="item" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 3. 文字 -->
+          <div
+            class="p-[30px] xl:p-0 xl:flex-[1_1_40%] bg-home-secondary-color xl:bg-transparent xl:order-2 xl:flex xl:justify-center">
+            <p class="xl:writing-mode-vertical text-home-fourth-color leading-10">青山依舊在，幾度夕陽紅。慣看秋月春<br
+                class="hidden xl:block">
+              風。一壺濁酒喜相逢，浪花淘盡英雄。是非<br class="hidden xl:block">
+              成敗轉頭空，滾滾長江東逝水，白髮漁樵江<br class="hidden xl:block">
+              渚上，古今多少事，都付笑談中。<br><br>
+              是非成敗轉頭空，青山依舊在，幾度夕陽紅。白<br class="hidden xl:block">
+              髮漁樵江渚上，古今多少事，都付笑談中。</p>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion 為什麼'做'甜點 END -->
+
+      <!-- #region 又霖 為什麼'吃'甜點 -->
+      <section class="mt-[40px] xl:bg-home-secondary-color relative topBg">
+        <div class="px-0 xl:px-10 dessert-container xl:flex xl:justify-between xl:items-center">
+          <!-- 1. 圖文 -->
+          <h2 class=" mb-[30px] xl:mb-0 flex justify-center xl:justify-center xl:flex-[1_1_15%] xl:order-2">
+            <picture>
+              <!-- 大圖 -->
+              <source media="(min-width: 1280px)" srcset="assets/img/index-home/lg-為什麼一定要吃甜點.png">
+              <!-- 小圖 -->
+              <img src="assets/img/index-home/sm-橫式-為什麼一定要吃甜點.png" alt="吃甜點" loading="lazy">
+            </picture>
+          </h2>
+
+          <!-- 2. 點心圖  -->
+          <div class="xl:flex-[1_1_45%] xl:order-3">
+            <div class="imagetrimmimg imageTrimmingSquare">
+              <img src="https://bit.ly/2zzAQS4" alt="item" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 3. 文字 -->
+          <div
+            class="p-[30px] xl:p-0 xl:flex-[1_1_40%] bg-home-secondary-color xl:bg-transparent xl:order-1 xl:flex xl:justify-start">
+            <p class="xl:writing-mode-vertical text-home-fourth-color leading-10">青山依舊在，幾度夕陽紅。慣看秋月春<br
+                class="hidden xl:block">
+              風。一壺濁酒喜相逢，浪花淘盡英雄。是非<br class="hidden xl:block">
+              成敗轉頭空，滾滾長江東逝水，白髮漁樵江<br class="hidden xl:block">
+              渚上，古今多少事，都付笑談中。<br><br>
+              是非成敗轉頭空，青山依舊在，幾度夕陽紅。白<br class="hidden xl:block">
+              髮漁樵江渚上，古今多少事，都付笑談中。</p>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion 為什麼'吃'甜點 END -->
+
+      <!-- #region  吃甜點不要理由 -->
+      <section class="max-xl:mt-[30px] mt-[95px]">
+        <div class="dessert-container">
+          <picture class="flex justify-center">
+            <source media="(min-width: 1280px)" srcset="assets/img/index-home/lg-想吃甜點是不需要理由的.png">
+            <img src="assets/img/index-home/sm-橫式-想吃甜點是不需要理由的.png" alt="想吃甜點是不需要理由的" loading="lazy">
+          </picture>
+        </div>
+      </section>
+      <!-- #endregion END 吃甜點不要理由 END -->
+
+      <!-- #region 產品 -->
+      <section class="max-xl:mt-[30px] mt-[80px]">
+        <div class="dessert-container">
+          <div class="w-full flex justify-center gap-5">
+            <!-- 卡片 1 -->
+            <div class="w-full max-w-[300px] h-full">
+              <div
+                class="flex justify-between w-full h-full max-w-[300px] max-h-[315px] aspect-[300/315] bg-[url('https://bit.ly/2zBjQuq')] bg-cover bg-center bg-no-repeat">
+                <div
+                  class="p-[10px] h-[107px] flex justify-center items-center ml-[20px] break-keep writing-mode-vertical text-base text-home-secondary-color tracking-[6px] font-pinfangSemiBold bg-home-primary-color">
+                  本日精選</div>
+                <!-- heart -->
+                <div class="mr-[22px] mt-[19px] w-[24px] h-[24px]">
+                  <img src="assets/img/index-home/favorite_border.png" alt="heart" loading="lazy" class="w-full h-full">
+                </div>
+              </div>
+              <!-- tiemTextInfo -->
+              <div class="w-full h-full max-h-[56px] text-[24px] flex items-center">
+                <div
+                  class="w-full max-w-[173px] h-full dynamic-padding-x-33-y14 flex-[1_1_57%] flex justify-center items-center border-r-[1px] border-r-home-secondary-color  font-pinfangLight text-home-primary-color fontSizeMin12Max20 break-keep">
+                  焦糖馬卡龍</div>
+                <div
+                  class="w-full max-w-[127px] h-full dynamic-padding-x-33-y14 flex-[1_1_43%] flex justify-center items-center font-pinfangSemiBold text-home-primary-color fontSizeMin12Max20 break-keep">
+                  NT$450</div>
+              </div>
+              <button type="button"
+                class="w-full max-w-[300px] bg-home-secondary-color flex justify-center items-center h-full fontSizeMin12Max24 font-pinfangSemiBold text-home-primary-color dynamic-padding-x-90-y16">加入購物車</button>
+            </div>
+            <!-- 卡片 2 -->
+            <div class="hidden w-full max-w-[300px] h-full md:block ">
+              <div
+                class="flex justify-between w-full h-full max-w-[300px] max-h-[315px] aspect-[300/315] bg-[url('https://bit.ly/2zBDAxX')] bg-cover bg-center bg-no-repeat">
+                <div
+                  class="p-[10px] h-[107px] flex justify-center items-center ml-[20px] break-keep writing-mode-vertical text-base text-home-secondary-color tracking-[6px] font-pinfangSemiBold bg-home-primary-color">
+                  本日精選</div>
+                <!-- heart -->
+                <div class="mr-[22px] mt-[19px] w-[24px] h-[24px]">
+                  <img src="assets/img/index-home/favorite_border.png" alt="heart" loading="lazy" class="w-full h-full">
+                </div>
+              </div>
+              <!-- tiemTextInfo -->
+              <div class="w-full h-full max-h-[56px] text-[24px] flex items-center">
+                <div
+                  class="w-full max-w-[173px] h-full dynamic-padding-x-33-y14 flex-[1_1_57%] flex justify-center items-center border-r-[1px] border-r-home-secondary-color  font-pinfangLight text-home-primary-color fontSizeMin12Max20 break-keep">
+                  焦糖馬卡龍</div>
+                <div
+                  class="w-full max-w-[127px] h-full dynamic-padding-x-33-y14 flex-[1_1_43%] flex justify-center items-center font-pinfangSemiBold text-home-primary-color fontSizeMin12Max20 break-keep">
+                  NT$450</div>
+              </div>
+              <button type="button"
+                class="w-full max-w-[300px] bg-home-secondary-color flex justify-center items-center h-full fontSizeMin12Max24 font-pinfangSemiBold text-home-primary-color dynamic-padding-x-90-y16">加入購物車</button>
+            </div>
+            <!-- 卡片 3 -->
+            <div class="hidden w-full max-w-[300px] h-full xl:block">
+              <div
+                class="flex justify-between w-full h-full max-w-[300px] max-h-[315px] aspect-[300/315] bg-[url('https://bit.ly/2QbVsVR')] bg-cover bg-center bg-no-repeat">
+                <div
+                  class="p-[10px] h-[107px] flex justify-center items-center ml-[20px] break-keep writing-mode-vertical text-base text-home-secondary-color tracking-[6px] font-pinfangSemiBold bg-home-primary-color">
+                  本日精選</div>
+                <!-- heart -->
+                <div class="mr-[22px] mt-[19px] w-[24px] h-[24px]">
+                  <img src="assets/img/index-home/favorite_border.png" alt="heart" loading="lazy" class="w-full h-full">
+                </div>
+              </div>
+              <!-- tiemTextInfo -->
+              <div class="w-full h-full max-h-[56px] text-[24px] flex items-center">
+                <div
+                  class="w-full max-w-[173px] h-full dynamic-padding-x-33-y14 flex-[1_1_57%] flex justify-center items-center border-r-[1px] border-r-home-secondary-color  font-pinfangLight text-home-primary-color fontSizeMin12Max20 break-keep">
+                  焦糖馬卡龍</div>
+                <div
+                  class="w-full max-w-[127px] h-full dynamic-padding-x-33-y14 flex-[1_1_43%] flex justify-center items-center font-pinfangSemiBold text-home-primary-color fontSizeMin12Max20 break-keep">
+                  NT$450</div>
+              </div>
+              <button type="button"
+                class="w-full max-w-[300px] bg-home-secondary-color flex justify-center items-center h-full fontSizeMin12Max24 font-pinfangSemiBold text-home-primary-color dynamic-padding-x-90-y16">加入購物車</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion 產品 -->
+    </main>
+
+    <!-- 店家聯絡方式 -->
+    <footer>
+      <div class=" bg-home-primary-color mt-16">
+        <div
+          class="dessert-container h-[186px] grid grid-cols-1 justify-between content-center mobile:h-[116px] mobile:grid-cols-2 gap-0 mobile:gap-14 mobile:items-center">
+          <div class="h-[56px] flex gap-2 justify-start items-center mb-8 mobile:mb-0">
+            <img class="w-10 h-10 flex justify-center items-center" src="assets/img/index-home/logo-light@2x.png"
+              alt="logo-light@2x" loading="lazy">
+            <p
+              class="font-helveticaneue text-white h-[33px] text-2xl  mobile:text-base sm:text-2xl leading-[33px] break-keep">
+              訂閱你我的甜蜜郵件</p>
+          </div>
+
+          <!-- email 輸入框 -->
+          <div class="flex justify-center items-center">
+            <label class="relative flex-[1_1_80%]">
+              <input class="w-full h-[56px]" type="email" name="email">
+              <div class="absolute left-[20px] top-[50%] -translate-y-[50%]">
+                <img src="assets/img/index-home/mail-24px.png" alt="mail" loading="lazy">
+              </div>
+            </label>
+            <button type="button"
+              class="flex flex-[1_1_20%] justify-center items-center w-[64px] h-[56px] bg-home-third-color">
+              <img class="h-auto" src="assets/img/index-home/arrow_forward-24px.png" alt="arrow forward" loading="lazy">
+            </button>
+          </div>
+          <!-- email 輸入框 END -->
+        </div>
+      </div>
+
+      <!-- 店家地址 -->
+      <address class="bg-home-secondary-color">
+        <div class="dessert-container">
+          <div class="max-mobile:grid-cols1 max-mobile:gap-0 pt-9 pb-7 grid  grid-cols-2 gap-14">
+            <div class="grid grid-cols-1 col-start-1">
+              <img src="assets/img/index-home/logotype-lg-dark.png" alt="sweety" loading="lazy"
+                class="bg-home-secondary-color pb-7 mobile:pb-0">
+              <div class="self-end text-base text-home-primary-color break-keep">
+                <p class="leading-6">07-1234-5678</p>
+                <p class="leading-6">sweetaste@email.com</p>
+                <p class="leading-6">800高雄市新興區幸福路520號</p>
+              </div>
+            </div>
+            <!-- 吃甜點的好日子 -->
+            <div class="hidden mobile:flex justify-items-end -col-start-1">
+              <img src="assets//img/index-home/sm-今天是個吃甜點的好日子.png" alt="good dessert" loading="lazy">
+            </div>
+            <!-- 吃甜點的好日子 END -->
+          </div>
+
+          <div class="max-sm:gap-y-4 max-sm:grid-cols-1 pb-8  grid grid-cols-2">
+            <div class="max-sm:row-start-1 flex gap-4">
+              <img src="assets/img/index-home/ic-line@.png" alt="instagram" loading="lazy">
+              <img src="assets/img/index-home/ic-facebook.png" alt="facebook" loading="lazy">
+            </div>
+            <p
+              class="max-sm:row-start-2 max-sm:col-start-1 font-TimesLTStdRoman text-base text-home-primary-color  break-keep -col-start-1">
+              ©
+              2018
+              Sweetaste* All Rights
+              Reserved</p>
+          </div>
+        </div>
+
+      </address>
+    </footer>
+    <!-- 店家聯絡方式 END -->
+  </body>
+
+</html>

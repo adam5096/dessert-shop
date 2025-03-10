@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout-success</title>
+    <link rel="stylesheet" href="../styles/all-output/checkout-1-output.css">
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+      li {
+        cursor: pointer;
+        /* list-style: none; */
+      }
+
+      footer input[type="email"] {
+        background-image: url("./img/index-home/mail-24px.png");
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position: 5% 50%;
+        padding: 0.5rem 0.5rem 0.5rem 4rem;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 頂端導航 -->
+    <header class="max-lg:py-[36px] py-[30px]">
+      <div class="dessert-container flex max-mobile:justify-around justify-between items-center">
+        <!-- 漢堡 -->
+        <h1 class="max-mobile:flex hidden justify-center items-center  flex-1">
+          <img src="../assets/img/index-home/dehaze-24px.png" alt="hamburger">
+        </h1>
+        <!-- 漢堡 END -->
+
+        <!-- logo 圖 -->
+        <div class="max-mobile:justify-center flex items-center gap-2  flex-1">
+          <picture>
+            <!-- 大圖 -->
+            <source media="(min-width: 480px)" srcset="../assets/img/index-home/logo-all-dark.png">
+            <!-- 小圖 -->
+            <img src="../assets/img/index-home//logotype-sm-dark@2x.png" alt="logotype">
+          </picture>
+        </div>
+        <!-- 導航區 -->
+        <div
+          class="max-mobile:flex-1 max-sm:gap-3.5 max-md:gap-8 max-lg:gap-10 flex justify-between items-center flex-initial gap-20">
+          <!-- 導航文字 -->
+          <nav>
+            <ul
+              class="hidden items-center flex-1 mobile:flex mobile:justify-center mobile:flex-initial gap-3.5 mobile:my-0 sm:gap-8 md:gap-10 lg:gap-20">
+              <li class="topNavLinksStyle"><a class="topNavLinksInnerStyle sm:flex" href="../index.html"
+                  target="_self" class="text-lg">首頁</a></li>
+              <li class="topNavLinksStyle"><a class="topNavLinksInnerStyle sm:flex" href="./products.html"
+                  target="_self">甜點</a>
+              </li>
+              <li class="topNavLinksStyle"><a class="topNavLinksInnerStyle sm:flex" href="./login.html"
+                  target="_self">登入</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- 導航文字 END -->
+
+          <!-- cart -->
+          <div class="w-6 h-6 flex justify-center items-center flex-1 mobile:flex-initial">
+            <a class="w-auto font-bold text-base text-top-nav-bar" href="./cart.html" target="_self"><img
+                class="flex w-full h-full" src="../assets/img/index-home/shopping_cart.png" alt="cart"></a>
+          </div>
+          <!-- cart END -->
+        </div>
+        <!-- 導航區 END -->
+      </div>
+    </header>
+    <!-- 頂端導航 END -->
+
+    <main>
+      <section>
+        <div class="max-lg:px-0 dessert-container flex justify-center gap-5">
+          <div>
+            <!-- 背景大圖 -->
+            <div>
+              <img src="https://bit.ly/2P7GhNd" alt="背景大圖" loading="lazy">
+            </div>
+            <div class="max-xl:block hidden px-[102px] py-4 text-center bg-home-third-color">
+              <a href="#" class="break-keep text-2xl text-home-primary-color font-pinfangSemiBold">繼續逛逛</a>
+            </div>
+            <div class="relative -top-1/2 flex flex-col items-center gap-y-10">
+              <!-- 購物與結帳進度 -->
+              <div class="flex-1 main-wing-succeed flex justify-between items-center gap-x-[65px]">
+                <div class="w-7 h-7">
+                  <img src="../assets/img/checkout-1/check_circle_20dp_3F5D45.png" alt="dot" loading="lazy" class=" z-10">
+                </div>
+                <div class="w-7 h-7">
+                  <img src="../assets/img/checkout-1/check_circle_20dp_3F5D45.png" alt="dot" loading="lazy" class=" z-10">
+                </div>
+                <div class="w-7 h-7">
+                  <img src="../assets/img/checkout-1/check_circle_20dp_3F5D45.png" alt="dot" loading="lazy" class=" z-10">
+                </div>
+              </div>
+              <!-- 購物與結帳進度 END -->
+              <div>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="../assets/img/checkout-1/lg-付款成功@2x.png" type="image/png">
+                  <img src="../assets/img/checkout-1/lg-付款成功.png" alt="付款成功" loading="lazy">
+                </picture>
+              </div>
+              <div class="max-xl:hidden block px-[102px] py-4 text-center bg-home-third-color">
+                <a href="./products.html" target="_self" class="break-keep text-2xl text-home-primary-color font-pinfangSemiBold">繼續逛逛</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 店家聯絡方式 -->
+    <footer>
+      <div class="bg-home-primary-color max-xl:p-[30px]">
+        <div class="dessert-container">
+          <div class="max-xl:grid-cols-1 grid grid-cols-2 items-center">
+            <div class="max-xl:justify-center max-xl:flex-col flex gap-x-5 items-center">
+              <div class="flex justify-center items-center">
+                <img class="w-10 h-10 " src="../assets/img/index-home/logo-light@2x.png" alt="logo-light@2x"
+                  loading="lazy">
+              </div>
+              <div class=" flex items-center py-10">
+                <p
+                  class="font-helveticaneue text-white text-2xl leading-[33px] break-keep">
+                  訂閱你我的甜蜜郵件</p>
+              </div>
+            </div>
+
+            <!-- email 輸入框 -->
+            <div class="flex justify-center items-center">
+              <label class="relative flex-[1_1_80%]">
+                <input class="w-full h-[56px]" type="email" name="email">
+                <div class="absolute left-[20px] top-[50%] -translate-y-[50%]">
+                  <img src="../assets/img/index-home/mail-24px.png" alt="mail">
+                </div>
+              </label>
+              <button type="button"
+                class="flex flex-[1_1_20%] justify-center items-center w-[64px] h-[56px] bg-home-third-color">
+                <img class="h-auto" src="../assets/img/index-home/arrow_forward-24px.png" alt="arrow forward">
+              </button>
+            </div>
+            <!-- email 輸入框 END -->
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 店家地址 -->
+      <address class="bg-home-secondary-color ">
+        <div class="dessert-container">
+          <div class="max-mobile:grid-cols1 max-mobile:gap-0 pt-9 pb-7 grid  grid-cols-2 gap-14">
+            <div class="grid grid-cols-1 col-start-1">
+              <img src="../assets/img/index-home/logotype-lg-dark.png" alt="sweety"
+                class="bg-home-secondary-color pb-7 mobile:pb-0">
+              <div class="self-end text-base text-home-primary-color ">
+                <p class="leading-6">07-1234-5678</p>
+                <p class="leading-6">sweetaste@email.com</p>
+                <p class="leading-6">800高雄市新興區幸福路520號</p>
+              </div>
+            </div>
+            <!-- 吃甜點的好日子 -->
+            <img src="../assets//img/index-home/sm-今天是個吃甜點的好日子.png" alt="good dessert"
+              class="hidden mobile:flex justify-items-end -col-start-1">
+            <!-- 吃甜點的好日子 END -->
+          </div>
+
+          <div class="max-sm:gap-y-4 max-sm:grid-cols-1 pb-8  grid grid-cols-2">
+            <div class="max-sm:row-start-1 flex gap-4">
+              <img src="../assets/img/index-home/ic-line@.png" alt="instagram">
+              <img src="../assets/img/index-home/ic-facebook.png" alt="facebook">
+            </div>
+            <p
+              class="max-sm:row-start-2 max-sm:col-start-1 font-TimesLTStdRoman text-base text-home-primary-color  break-keep -col-start-1">
+              ©
+              2018
+              Sweetaste* All Rights
+              Reserved</p>
+          </div>
+        </div>
+
+      </address>
+    </footer>
+    <!-- 店家聯絡方式 END -->
+  </body>
+
+</html>
