@@ -874,10 +874,6 @@ select {
   grid-column: span 2 / span 2;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
 .-col-start-1 {
   grid-column-start: -1;
 }
@@ -942,10 +938,6 @@ select {
   grid-row-end: 2;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -996,10 +988,6 @@ select {
 
 .mt-\[95px\] {
   margin-top: 95px;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .block {
@@ -1195,10 +1183,6 @@ select {
   grid-template-columns: subgrid;
 }
 
-.grid-cols-8 {
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
@@ -1382,18 +1366,9 @@ select {
   border-right-width: 1px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-home-secondary-color {
   --tw-border-opacity: 1;
   border-color: rgb(234 240 237 / var(--tw-border-opacity, 1));
-}
-
-.border-slate-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
 }
 
 .border-r-home-secondary-color {
@@ -1459,10 +1434,6 @@ select {
 
 .p-\[30px\] {
   padding: 30px;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .px-0 {
@@ -1587,10 +1558,6 @@ select {
 
 .text-center {
   text-align: center;
-}
-
-.text-start {
-  text-align: start;
 }
 
 .font-TimesLTStdRoman {
@@ -1722,10 +1689,6 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.outline {
-  outline-style: solid;
 }
 
 /* 又霖的神奇魔法 */
@@ -2097,6 +2060,10 @@ select {
     display: block;
   }
 
+  .max-lg\:flex {
+    display: flex;
+  }
+
   .max-lg\:hidden {
     display: none;
   }
@@ -2323,16 +2290,8 @@ select {
     display: flex;
   }
 
-  .sm\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
   .sm\:gap-8 {
     gap: 2rem;
-  }
-
-  .sm\:p-0 {
-    padding: 0px;
   }
 
   .sm\:text-2xl {
@@ -2342,37 +2301,12 @@ select {
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .md\:block {
     display: block;
   }
 
-  .md\:inline-block {
-    display: inline-block;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:gap-10 {
     gap: 2.5rem;
-  }
-
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
 
@@ -2511,11 +2445,6 @@ select {
   .xl\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .xl\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .xl\:writing-mode-vertical {
