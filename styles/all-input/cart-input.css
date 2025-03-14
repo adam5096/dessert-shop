@@ -196,7 +196,7 @@
   }
 
   /* 購物車 採購流程卡片 分隔線 偽類 */
-  .cart-divide-line {
+  /* .cart-divide-line {
     z-index: 0;
     & ::after,
     & ::before {
@@ -220,7 +220,7 @@
     & ::after {
       bottom: -1vh;
     }
-  }
+  } */
   /* 訂單摘要 分隔線 偽類 */
   .booking-summary-divide-line {
     & ::after {
